@@ -11,14 +11,13 @@ import com.teste.primeiroexemplo.model.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class ProdutoRepository {
+public class ProdutoRepositoryOld {
     
+
     //Simulando banco de dados
     private ArrayList<Produto> produtos = new ArrayList<>();
     private Integer ultimoId = 0;
-
-
-
+    
     /**
      * Metodo para retorna uma lista de produtos
      * @return lista de produtos

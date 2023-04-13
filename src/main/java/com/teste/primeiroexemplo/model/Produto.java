@@ -1,10 +1,22 @@
 package com.teste.primeiroexemplo.model;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@SpringBootApplication
+@EnableJpaRepositories(basePackages = "com.teste.primeiroexemplo.model")
+@EntityScan(basePackages = "com.teste.primeiroexemplo.model")
+@Entity
 public class Produto {
-
-    
-
     //#region Atributos
+    @Id //vai transformar essa coluna em primary key
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     private String nome;

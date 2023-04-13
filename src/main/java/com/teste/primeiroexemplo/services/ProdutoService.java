@@ -7,13 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.teste.primeiroexemplo.model.Produto;
-import com.teste.primeiroexemplo.repository.ProdutoRepository;
+import com.teste.primeiroexemplo.repository.ProdutoRepositoryOld;
+
 
 @Service
 public class ProdutoService {
     
     @Autowired //invertendo controle, quem toma conta sou eu, ele devolvera uma instancia pronta para usar
-    private ProdutoRepository produtoRepository;
+    private ProdutoRepositoryOld produtoRepository;
 
     /**
      * Metodo para retornar uma lista de produtos
