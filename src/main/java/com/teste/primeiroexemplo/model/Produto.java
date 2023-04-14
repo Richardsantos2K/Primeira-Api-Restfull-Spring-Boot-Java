@@ -1,30 +1,42 @@
 package com.teste.primeiroexemplo.model;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+
+@Table(name="produtos")
+@Entity(name = "Produto")
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = "com.teste.primeiroexemplo.model")
 @EntityScan(basePackages = "com.teste.primeiroexemplo.model")
-@Entity
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = "id")
 public class Produto {
     //#region Atributos
     @Id //vai transformar essa coluna em primary key
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="id")
     private Integer id;
 
+    @Column(name="nome")
     private String nome;
 
+    @Column(name="quantidade")
     private Integer quantidade;
 
+    @Column(name="valor")
     private double valor;
 
+    @Column(name="observacao")
     private String observacao;
     //#endregion
     

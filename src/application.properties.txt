@@ -1,13 +1,13 @@
 logging.level.org.springframework.boot.autoconfigure=ERROR
 
-server.port=8080
-spring.application.name=tutorial_spring_database
+server.port=8081
+spring.application.name=api
 spring.profiles.active=local
 
 # DATASOURCE
-spring.datasource.url=spring.datasource.url=jdbc:h2:file:./data/tutorial_spring_database
+spring.datasource.url=jdbc:h2:file:./data/tutorial_spring_database
 spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=postgres
+spring.datasource.username=admin
 spring.datasource.password=1234
 
 # H2 Console
@@ -21,4 +21,3 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.defer-datasource-initialization=true
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
-
