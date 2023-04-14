@@ -4,18 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import javax.persistence.*;
 
-
 @Table(name="produtos")
 @Entity(name = "Produto")
-@SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.teste.primeiroexemplo.model")
-@EntityScan(basePackages = "com.teste.primeiroexemplo.model")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -39,7 +32,7 @@ public class Produto {
     @Column(name="observacao")
     private String observacao;
     //#endregion
-    
+
 
     //#region Get e Set
     /**
@@ -112,6 +105,5 @@ public class Produto {
         this.observacao = observacao;
     }
     //#endregion
-
-
 }
+

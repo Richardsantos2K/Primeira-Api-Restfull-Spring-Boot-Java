@@ -18,3 +18,26 @@ spring:
           lob:
             non_contextual_creation: true
     database-plataform: org.hibernate.dialect.PostgreSQL90Dialect
+
+
+
+
+
+
+
+
+
+
+
+
+
+    spring:
+      datasource:
+        url: jdbc:h2:file:/data/tutorial_spring_database
+        username: sa
+        password: 1234
+        driverClassName: org.h2.Driver
+      h2:
+        console.enabled: true
+      jpa:
+        spring.jpa.database-platform: org.hibernate.dialect.H2Dialect

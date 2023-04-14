@@ -1,1 +1,0 @@
-CREATE DATABASE tutorial_spring_database;
