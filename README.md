@@ -1,3 +1,13 @@
+# Atenção
+Os assuntos descritos a baixo são antigos, atualmente estou estudando JPA, JDBC, Spring, PostgreSQL e Docker
+Logo mais o projeto estara funcional junto ao banco de dados real
+
+o projeto ainda é funcional pelo principio de arrays que foi usado no ProdutoRepositoryOld no qual esta simulando um banco de dados 
+Obrigado pela compreensão :)
+
+
+
+
 # Primeira-Api-Restfull-Spring-Boot-Java
 Nesta api podemos fazer busca de produtos pelo id, atualizar produtos pelo id, deletar produtos pelo id, consultar produtos por id e  consultar todos os produtos
 
